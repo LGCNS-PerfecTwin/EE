@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Meiryo';
+    src: url('../fonts/meiryo.ttc') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MeiryoBold';
+    src: url('../fonts/meiryob.ttc') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.gap48 {gap: 48px;}
+.purple {color: var(--c-purple);}
+
+:root {
+    --c-blue: #0597D7;
+    --c-purple: #C928EC;
+    --cd-blue: #0597D7;
+    --cd-purple: #A341B9;
+
+    --border-radius-18: 18px;
+}
+
+* {box-sizing: border-box;}
+body {font-size: 10px; margin: 0; font-family: "Meiryo", sans-serif; overflow-x: hidden;}
+img {width: 100%; height: auto;}
+button {border: none; background-color: transparent; margin: 0; cursor: pointer;}
+h1, h2, h3, h4, h5, h6, p, span, a {margin: 0; letter-spacing: -0.05rem;}
+a {color: inherit; text-decoration: none;}
+
+/* ====================================== */
+.mb12 {margin-bottom: 12px;}
+.mb24 {margin-bottom: 24px;}
+.mb36 {margin-bottom: 36px;}
+.mb48 {margin-bottom: 48px;}
+.mb72 {margin-bottom: 72px;}
+.mobile .mb12 {margin-bottom:8px}
+.mobile .mb24 {margin-bottom:18px}
+.mobile .mb36 {margin-bottom:28px}
+.mobile .mb48 {margin-bottom:36px}
+.mobile .mb72 {margin-bottom:60px}
+/* ====================================== */
+
+/* ====================================== */
+h1 { font-size: 60px; font-weight: 700; }
+h2 { font-size: 44px; }
+h3 { font-size: 26px;}
+h4 { font-size: 24px; }
+.mobile h1 { font-size: 34px; }
+.mobile h2 { font-size: 23px; }
+.mobile h3 { font-size: 16px;}
+.mobile h4 { font-size: 14.73px; }
+h2.gradation {font-size: 36px;}
+/* ====================================== */
+
+
+
+
+section > div:first-child {padding: 72px 180px; max-width: 1700px; margin: 0 auto;}
+@media screen and (max-width: 1320px) {
+    section > div:first-child {padding: 60px 72px;}
+}
+.mobile section > div:first-child {padding: 48px 14px;}
+
+.dark {color: #ffffff;}
+.light {color: #16161d}
+.gradation { background: linear-gradient(-240deg, var(--c-purple) 10%, var(--c-blue) 70%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.gradation u { text-decoration: none; position: relative; color: transparent; }
+.gradation u::after { content: '30％'; position: absolute; left: 0; right: 0; bottom: -3px; height: 3px; background: linear-gradient(-240deg, var(--c-purple), var(--c-blue)); color: inherit; }
+
+.center {display: flex; align-items: center; justify-content: space-between;}
+
+.text-center {text-align: center;}
+
+.contact {padding: 24px 48px; border-radius: 6px; color: #ffffff; background-color: var(--cd-blue) !important;}
+.mobile .contact {padding: 12px 24px; gap: 12px;}
+.mobile .contact img {height: 16px; object-fit: contain;}
+.tiny {letter-spacing: -0.1em;}
